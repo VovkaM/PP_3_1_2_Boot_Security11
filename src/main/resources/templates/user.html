@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://thymeleaf.org ">
+<head>
+  <meta charset="UTF-8">
+  <title>User</title>
+</head>
+<body>
+<p th:text="${user.surname}">VALUE</p>
+<p th:text="${user.name}">VALUE</p>
+<p th:text="${user.id}">VALUE</p>
+
+</form>
+<br/>
+<form th:action="@{/logout}" method="post">
+  <input type="submit" value="LOGOUT"/>
+</form>
+</body>
+</html>
